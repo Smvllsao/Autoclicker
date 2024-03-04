@@ -1,0 +1,1 @@
+I ama Trying to build a autocliker, I've already done it before very simple with Pyautogui. Now I want to make it more complex, with a gui ( a simple list and add and delete buttons) and with the a script process; The main.py will create a file with the elements of the list and the user might use it to run the autoclicker. It is a app to generate scripts shortly.
