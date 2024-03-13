@@ -12,6 +12,9 @@ class Tracker:
             self.y = y
             self.button = button
             self.data_base.append((self.x, self.y, self.button))
+            if len(self.data_base) > 1:
+                self.data_base.pop(0)
+
     def update(self):
         try:
             with Listener(on_click=self.on_click) as listener:
@@ -21,9 +24,8 @@ class Tracker:
     def append_list(self,list):
         list.append(self.data_base)
         self.data_base = []
+        print(list)
+        return list
 
-mouse = Tracker()
 
-while True:
-    mouse.update()
     
